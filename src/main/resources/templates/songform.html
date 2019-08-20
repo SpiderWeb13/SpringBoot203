@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
-<body><form action="#" th:action="@{/songform}" th:object="${song}" method = "post"/>
-    Name: <input type="text" th:field="*{name}" /><" br />
+<body><form action="#" th:action="@{/songform}" th:object="${song}" method = "post">
+    Name: <input type="text" th:field="*{name}" /><br></br>
+    Artist: <input type="text" th:field="*{artist}" /><br></br>
+    Album: <input type="text" th:field="*{album}" /><br></br>
+    Rating: <input type="text" th:field="*{rating}" /><br></br>
+    Year: <input type="text" th:field="*{year}" /><br></br>
+    <input type="submit" value="Submit" />
+</form>
 </body>
 </html>

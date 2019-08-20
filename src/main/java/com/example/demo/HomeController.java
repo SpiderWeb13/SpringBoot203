@@ -11,11 +11,11 @@ public class HomeController {
     @GetMapping("/songform")
     public String loadFormPage(Model model) {
         model.addAttribute("song",new Song());
-        return "singform";
+        return "songform";
     }
     @PostMapping("/songform")
-    public String loadFromPage (@ModelAttribute song song, Moddel model) {
-        model.addAttriibute("song", song);
+    public String loadFromPage (@ModelAttribute Song song, Model model) {
+        model.addAttribute("song", song);
         return "confirmsong";
     }
 }
